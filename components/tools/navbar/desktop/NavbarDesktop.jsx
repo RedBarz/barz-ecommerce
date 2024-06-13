@@ -193,11 +193,11 @@ const NavbarDesktop = () => {
         </div>
       </div>
       <div className="flex gap-5">
-        <a className="text-white flex justify-center items-center border border-white font-semibold rounded-[5px] px-10 py-[10px] hover:bg-[#6C5DD3] hover:duration-300 hover:border-[#7665e4] hover:cursor-pointer">
+        <a href="" className="text-white flex justify-center items-center border border-white font-semibold rounded-[5px] px-10 py-[10px] hover:bg-[#6C5DD3] hover:duration-300 hover:border-[#7665e4] hover:cursor-pointer">
           Sign Up
         </a>
-        <a className="text-white flex justify-center items-center border border-white font-semibold rounded-[5px] px-10 py-[10px] hover:bg-[#6C5DD3] hover:duration-300 hover:border-[#7665e4] hover:cursor-pointer">
-          Login
+        <a href="/signin" className="text-white flex justify-center items-center border border-white font-semibold rounded-[5px] px-10 py-[10px] hover:bg-[#6C5DD3] hover:duration-300 hover:border-[#7665e4] hover:cursor-pointer">
+          Sign In
         </a>
       </div>
     </nav>

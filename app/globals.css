@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-image: linear-gradient(to right, #984d38 -30%, #181e41 33%);
+  background-image: linear-gradient(to right bottom, #984d38 -13%, #181e41 63%);
 }
 
 @keyframes fadeIn {
