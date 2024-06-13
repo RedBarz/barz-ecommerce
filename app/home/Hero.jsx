@@ -1,7 +1,8 @@
 "use client"
 
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import { gsap } from 'gsap';
+import Caroussel from "@/components/layouts/Caroussel";
 
 const Hero = () => {
   useEffect(() => {
@@ -64,7 +65,7 @@ const Hero = () => {
                 Create
               </a>
             </div>
-            <div className="flex justify-around items-center gap-[20px] mt-12">
+            <div className="flex justify-between items-center w-full mt-12">
               <div className="flex flex-col items-center">
                 <p className="text-white text-[30px]">+100</p>
                 <p className="text-white/70">Brands</p>
@@ -101,6 +102,9 @@ const Hero = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mx-[150px]">
+        <Caroussel />
       </div>
     </section>
   );
