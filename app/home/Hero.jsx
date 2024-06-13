@@ -46,7 +46,7 @@ const Hero = () => {
           Creators Market
         </button>
       </div>
-      <div className="flex justify-around items-center mb-[100px] mx-[150px]">
+      <div className="flex justify-around items-center mb-[100px] mx-[100px] gap-10" >
         <div className="w-[40%]">
           <div className="flex flex-col items-start">
             <h1 className="text-[60px] text-white text-shadow">
@@ -81,7 +81,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-[40%] ">
+        <div className="w-[40%]">
           <div className="flex flex-col flex-wrap h-[517px]">
             <div className="flex flex-col justify-between flex-wrap gap-[10px]">
               <img src="/assets/picture1.svg" alt="" />
