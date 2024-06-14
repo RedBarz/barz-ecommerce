@@ -38,7 +38,7 @@ const NavbarDesktop = () => {
           <input
             type="text"
             placeholder="Search Items, Fashion, Collection and Users"
-            className="w-[350px] h-[50px] border border-white/10 bg-transparent rounded-full pl-10 pr-4 text-[12px] text-white placeholder:text-white placeholder:ml-4"
+            className="w-[350px] h-[50px] border border-white/10 bg-transparent rounded-full pl-10 pr-4 text-[12px] text-white placeholder:text-white placeholder-ml-4 focus:outline-none"
           />
           <img
             src="/assets/search.svg"
