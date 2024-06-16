@@ -8,8 +8,14 @@ const SignUp = () => {
         <Avatar text="Begin your meta fashion journey here" />
       </div>
       <div className="bg-white/20 border border-white/20 rounded-[10px] py-5 px-[35px]">
-        <div>
+        <div className="flex justify-between">
           <h1 className="text-white text-[30px]">Sign Up</h1>
+          <a
+            className="text-white/50 hover:text-[#B75CFF] duration-200 active:opacity-10 text-[30px]"
+            href="/"
+          >
+            Home
+          </a>
         </div>
         <div className="flex gap-[10px] mt-[50px]">
           <p className="text-white">Already a Member ?</p>
@@ -61,12 +67,7 @@ const SignUp = () => {
                 className="border-b  border-white bg-transparent w-[30%] outline-none text-white pb-[5px] appearance-none"
                 defaultValue=""
               >
-                <option
-                  value=""
-                  disabled
-                  selected
-                  hidden
-                >
+                <option value="" disabled selected hidden>
                   Mois
                 </option>
                 <option value="1">Janvier</option>

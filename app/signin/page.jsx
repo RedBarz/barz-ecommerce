@@ -8,8 +8,9 @@ const SignIn = () => {
         <Avatar text="Explore the world of meta fashion"/>
       </div>
       <div className="bg-white/20 border border-white/20 rounded-[10px] py-5 px-[35px]">
-        <div>
+        <div className="flex justify-between">
           <h1 className="text-white text-[30px]">Sign In</h1>
+          <a className="text-white/50 hover:text-[#B75CFF] duration-200 active:opacity-10 text-[30px]" href="/">Home</a>
         </div>
         <div className="flex gap-[10px] mt-[50px]">
           <p className="text-white">New User ?</p>

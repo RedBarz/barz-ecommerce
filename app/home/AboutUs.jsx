@@ -1,14 +1,10 @@
 import React from "react";
+import Title from "@/components/layouts/Title";
 
 const AboutUs = () => {
   return (
     <section className="mt-[100px]">
-      <div className="flex flex-col justify-center items-center">
-        <h2 className="text-[40px] text-white font-semibold">About Us</h2>
-        <p className="text-white/60 text-[20px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-      </div>
+      <Title title="About Us" subTitle="lorem ipsum dolor amet, consectetur adipiscing elit"/>
       <div className="flex justify-center mt-[50px]">
         <div className="w-[50%] flex justify-center ">
           <img src="/assets/picture8.svg" alt="" />

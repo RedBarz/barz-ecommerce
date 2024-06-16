@@ -1,14 +1,16 @@
-import React from 'react'
-import Hero from './Hero'
-import AboutUs from './AboutUs'
+import React from "react";
+import Hero from "./Hero";
+import AboutUs from "./AboutUs";
+import Collection from "./Collection";
 
 const HomePage = () => {
   return (
     <>
       <Hero />
-      <AboutUs/>
+      <AboutUs />
+      <Collection />
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
