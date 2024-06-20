@@ -1,15 +1,18 @@
-"use client"
+"use client";
 
 import React, { useEffect } from "react";
-import { gsap } from 'gsap';
+import { gsap } from "gsap";
 import Caroussel from "@/components/layouts/Caroussel";
 
 const Hero = () => {
   useEffect(() => {
-    const imgRefs = document.querySelectorAll('img');
+    const imgRefs = document.querySelectorAll(".animate-me");
 
     imgRefs.forEach((imgRef) => {
-      gsap.set(imgRef, { transformPerspective: 800, transformStyle: "preserve-3d" });
+      gsap.set(imgRef, {
+        transformPerspective: 800,
+        transformStyle: "preserve-3d",
+      });
 
       const handleMouseMove = (event) => {
         const rect = imgRef.getBoundingClientRect();
@@ -22,15 +25,20 @@ const Hero = () => {
       };
 
       const handleMouseLeave = () => {
-        gsap.to(imgRef, { rotationY: 0, rotationX: 0, scale: 1, duration: 0.5 });
+        gsap.to(imgRef, {
+          rotationY: 0,
+          rotationX: 0,
+          scale: 1,
+          duration: 0.5,
+        });
       };
 
-      imgRef.addEventListener('mousemove', handleMouseMove);
-      imgRef.addEventListener('mouseleave', handleMouseLeave);
+      imgRef.addEventListener("mousemove", handleMouseMove);
+      imgRef.addEventListener("mouseleave", handleMouseLeave);
 
       return () => {
-        imgRef.removeEventListener('mousemove', handleMouseMove);
-        imgRef.removeEventListener('mouseleave', handleMouseLeave);
+        imgRef.removeEventListener("mousemove", handleMouseMove);
+        imgRef.removeEventListener("mouseleave", handleMouseLeave);
       };
     });
   }, []);
@@ -46,7 +54,7 @@ const Hero = () => {
           Creators Market
         </button>
       </div>
-      <div className="flex justify-around items-center mb-[100px] mx-[100px] gap-10" >
+      <div className="flex justify-around items-center mb-[100px] mx-[100px] gap-10">
         <div className="w-[40%]">
           <div className="flex flex-col items-start">
             <h1 className="text-[60px] text-white text-shadow">
@@ -84,21 +92,21 @@ const Hero = () => {
         <div className="w-[40%]">
           <div className="flex flex-col flex-wrap h-[517px]">
             <div className="flex flex-col justify-between flex-wrap gap-[10px]">
-              <img src="/assets/picture1.svg" alt="" />
-              <img src="/assets/picture2.svg" alt="" />
+              <img className="animate-me" src="/assets/picture1.svg" alt="" />
+              <img className="animate-me" src="/assets/picture2.svg" alt="" />
               <img
-                className="relative top-[-27px]"
+                className="relative top-[-27px] animate-me"
                 src="/assets/picture7.svg"
                 alt=""
               />
             </div>
             <div className="flex flex-col justify-between flex-wrap gap-[10px]">
-              <img src="/assets/picture3.svg" alt="" />
-              <img src="/assets/picture4.svg" alt="" />
-              <img src="/assets/picture5.svg" alt="" />
+              <img className="animate-me" src="/assets/picture3.svg" alt="" />
+              <img className="animate-me" src="/assets/picture4.svg" alt="" />
+              <img className="animate-me" src="/assets/picture5.svg" alt="" />
             </div>
             <div className="flex h-full justify-center items-center">
-              <img src="/assets/picture6.svg" alt="" />
+              <img className="animate-me" src="/assets/picture6.svg" alt="" />
             </div>
           </div>
         </div>

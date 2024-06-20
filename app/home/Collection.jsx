@@ -33,8 +33,8 @@ const Collection = () => {
       </div>
       <div>
         <div className="mt-[150px]">
-          <div className="flex justify-center gap-4">
-            {" "} 
+          <div className="flex justify-center gap-[48px]">
+            {" "}
             <a className="w-52 hover:bg-gradient-to-tl duration-200 hover:shadow-md hover:shadow-[#671AE4] flex justify-center items-center hover:cursor-pointer py-1 bg-white/20 border border-white/20 backdrop-blur-lg rounded-[10px] text-white font-semibold hover:bg-[#6C5DD3] hover:duration-200">
               All Collections
             </a>
@@ -52,8 +52,18 @@ const Collection = () => {
             </a>
           </div>
         </div>
-        <div>
-            <Card/>
+        <div className="w-full flex justify-center mt-5">
+          <div className="flex gap-[30px] flex-wrap max-w-[1500px] justify-center">
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
         </div>
       </div>
     </section>

@@ -95,10 +95,27 @@ body {
   position: fixed;
   top: 20px;
   right: 20px;
-  background-color: #33333300;
+  background-color: #ffffff84;
   color: white;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 10px;
+}
+
+.notification::after {
+  content: "";
+  display: block;
+  height: 2px; /* Hauteur de la barre de chargement */
+  background-color: #984D38;
+  animation: fillBar 5s linear forwards; /* Animation de remplissage de la barre */
+}
+
+@keyframes fillBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .con-like {
@@ -184,12 +201,4 @@ body {
   }
 }
 
-.notification {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-}
+

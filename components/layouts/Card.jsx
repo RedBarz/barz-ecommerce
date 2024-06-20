@@ -12,11 +12,11 @@ const Card = () => {
 
     setTimeout(() => {
       setShowNotification(false);
-    }, 3000);
+    }, 5000);
   };
 
   return (
-    <div className="bg-white/10 w-[390px] h-[595px] p-[25px] rounded-[10px]">
+    <div className="bg-white/10 w-[390px] h-[595px] p-[25px] rounded-[10px] shadow-lg">
       <img src="/assets/card1.svg" alt="" />
       <div className="mt-5">
         <div className="flex justify-between text-white/50">
