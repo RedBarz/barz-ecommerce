@@ -135,7 +135,7 @@ const NavbarDesktop = () => {
           </button>
           {isMoreOpen && (
             <div
-              className={`flex flex-col gap-2 bg-[#212749ab] border border-white/5 shadow-lg backdrop-blur-lg rounded-[10px] p-2 w-[200px] absolute top-full mt-5 left-1/2 transform -translate-x-1/2 ${
+              className={` z-50 flex flex-col gap-2 bg-[#212749ab] border border-white/5 shadow-lg backdrop-blur-lg rounded-[10px] p-2 w-[200px] absolute top-full mt-5 left-1/2 transform -translate-x-1/2 ${
                 isClosingMore ? "zoomOut" : "zoomIn"
               }`}
             >
